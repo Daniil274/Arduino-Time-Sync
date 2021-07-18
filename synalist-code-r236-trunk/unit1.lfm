@@ -1,0 +1,26 @@
+object Form1: TForm1
+  Left = 583
+  Height = 516
+  Top = 158
+  Width = 905
+  Caption = 'Form1'
+  ClientHeight = 516
+  ClientWidth = 905
+  LCLVersion = '2.0.6.0'
+  object Button1: TButton
+    Left = 304
+    Height = 120
+    Top = 328
+    Width = 299
+    Caption = 'Синхронизировать'
+    OnClick = Button1Click
+    TabOrder = 0
+  end
+  object ProgressBar1: TProgressBar
+    Left = 0
+    Height = 20
+    Top = 496
+    Width = 904
+    TabOrder = 1
+  end
+end

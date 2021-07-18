@@ -1,0 +1,92 @@
+object Form1: TForm1
+  Left = 486
+  Height = 517
+  Top = 317
+  Width = 878
+  Anchors = []
+  Caption = 'TimeSync'
+  ClientHeight = 517
+  ClientWidth = 878
+  OnCreate = Timer1Timer
+  LCLVersion = '2.0.6.0'
+  object Button1: TButton
+    Left = 16
+    Height = 120
+    Top = 368
+    Width = 368
+    Align = alCustom
+    Caption = 'Синхронизировать'
+    OnClick = Button1Click
+    TabOrder = 0
+  end
+  object ProgressBar1: TProgressBar
+    Left = 0
+    Height = 20
+    Top = 497
+    Width = 878
+    Align = alBottom
+    Step = 4
+    TabOrder = 1
+  end
+  object ListBox1: TListBox
+    Left = 398
+    Height = 497
+    Top = 0
+    Width = 480
+    Align = alRight
+    ItemHeight = 0
+    MultiSelect = True
+    ScrollWidth = 478
+    TabOrder = 2
+    TopIndex = -1
+  end
+  object Label1: TLabel
+    Left = 0
+    Height = 129
+    Top = 0
+    Width = 408
+    Alignment = taCenter
+    AutoSize = False
+    Caption = 'NN:NN'
+    Font.Height = 116
+    Layout = tlCenter
+    ParentColor = False
+    ParentFont = False
+    OptimalFill = True
+  end
+  object Edit1: TEdit
+    Left = 144
+    Height = 32
+    Top = 248
+    Width = 128
+    AutoSize = False
+    TabOrder = 3
+  end
+  object StaticText1: TStaticText
+    Left = 144
+    Height = 23
+    Top = 224
+    Width = 128
+    Caption = 'Введите порт:'
+    TabOrder = 4
+  end
+  object Timer1: TTimer
+    OnTimer = Timer1Timer
+    left = 8
+    top = 136
+  end
+  object PopupMenu1: TPopupMenu
+    left = 280
+    top = 248
+    object MenuItem2: TMenuItem
+      Caption = 'Paste'
+      OnClick = MenuItem2Click
+    end
+    object MenuItem1: TMenuItem
+      Caption = '-'
+    end
+    object MenuItem3: TMenuItem
+      Caption = 'About'
+    end
+  end
+end
